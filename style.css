@@ -21,6 +21,28 @@ body {
 
 /* --- Navigation Menu ------------------------------ */
 
+/* Overlay */
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: zero;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+.overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
+}
+
 /* Nav Menu Items */
 nav,
 nav ul {
@@ -89,17 +111,6 @@ nav li:nth-of-type(4) {
 
 nav li:nth-of-type(5) {
   background-color: var(--navColor5);
-}
-
-/* Overlay */
-.overlay {
-  position: fixed;
-  z-index: 9;
-  top: 0;
-  left: zero;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* --- Menu Bars ------------------------------------ */
